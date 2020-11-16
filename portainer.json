@@ -1,0 +1,101 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "title": "Coyotech WinterForge 1G",
+      "type": 3
+      "categories": [
+        "Minecraft",
+        "Forge",
+        "Coyotech"
+      ],
+      "description": "A docker template which provides a Moddable Minecraft Forge server (Any version) configured with a max of 1GB of RAM and 1 CPU cores of resources.",
+      "env": [
+        {
+          "label": "PASS",
+          "name": "Console Password"
+        },
+        {
+          "label": "MODPACK",
+          "name": "Modpack Download URL"
+        },
+        {
+          "default": "recommended",
+          "label": "VERSION",
+          "name": "Forge Version (Optional)"
+        },
+      ],
+      "logo": "https://photoeverywhere.co.uk/west/winterholiday/mountain_scene2033.jpg",
+      "note": "If you need to access the console, use an SSH client to access port 222. Sign in as root, combined with the password you created above.",
+      "platform": "linux",
+      "repository": {
+        "stackfile": "Template/winterforge/winterforge1g.yml",
+        "url": "https://github.com/CoyoTan/portainer_templates"
+      },
+    },
+    {
+      "title": "Coyotech WinterForge 2G",
+      "type": 3
+      "categories": [
+        "Minecraft",
+        "Forge",
+        "Coyotech"
+      ],
+      "description": "A docker template which provides a Moddable Minecraft Forge server (Any version) configured with a max of 2GB of RAM and 1.5 CPU cores of resources.",
+      "env": [
+        {
+          "label": "PASS",
+          "name": "Console Password"
+        },
+        {
+          "label": "MODPACK",
+          "name": "Modpack Download URL"
+        },
+        {
+          "default": "recommended",
+          "label": "VERSION",
+          "name": "Forge Version (Optional)"
+        },
+      ],
+      "logo": "https://photoeverywhere.co.uk/west/winterholiday/mountain_scene2033.jpg",
+      "note": "If you need to access the console, use an SSH client to access port 222. Sign in as root, combined with the password you created above.",
+      "platform": "linux",
+      "repository": {
+        "stackfile": "Template/winterforge/winterforge2g.yml",
+        "url": "https://github.com/CoyoTan/portainer_templates"
+      },
+    },
+    {
+      "title": "Coyotech WinterForge 4G",
+      "type": 3
+      "categories": [
+        "Minecraft",
+        "Forge",
+        "Coyotech"
+      ],
+      "description": "A docker template which provides a Moddable Minecraft Forge server (Any version) configured with a max of 4GB of RAM and 2 CPU cores of resources.",
+      "env": [
+        {
+          "label": "PASS",
+          "name": "Console Password"
+        },
+        {
+          "label": "MODPACK",
+          "name": "Modpack Download URL"
+        },
+        {
+          "default": "recommended",
+          "label": "VERSION",
+          "name": "Forge Version (Optional)"
+        },
+      ],
+      "logo": "https://photoeverywhere.co.uk/west/winterholiday/mountain_scene2033.jpg",
+      "note": "If you need to access the console, use an SSH client to access port 222. Sign in as root, combined with the password you created above.",
+      "platform": "linux",
+      "repository": {
+        "stackfile": "Template/winterforge/winterforge4g.yml",
+        "url": "https://github.com/CoyoTan/portainer_templates"
+      },
+    },
+ ]
+}

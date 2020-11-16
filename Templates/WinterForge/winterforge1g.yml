@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+        minecraft:
+                container_name: "WinterForge1G"
+                hostname: alpine
+                tty: true
+                stdin_open: true
+                image: coyotan/winterforge:latest
+                ports:
+                        - "25565:25565"
+                        - "222:22"
+                volumes:
+                        - "/home/sysadmin/composetest/basshalpine/data:/data"
+                environment:
+                        - MODPACK=https://cdn.discordapp.com/attachments/526249720444747791/775507708736307209/Testing_Docker-1.0.0.zip
+                        - PASS=password
+                command: -Xms256M -Xmx1024M
+                #Overshoot required resources by 512M. It's not expensive and provides a better user experience in the event things get laggy.
+                deploy:
+                  resources:
+                    limits:
+                      cpus: '1'
+                      memory: 1536M
+                    reservations:
+                      cpus: '0.5'
+                      memory: 1024M
+#TODO: Do NOT forget to change to random volume support in Portainer CE 2.1. We MUST provide unique volumes for these containers to function properly.
