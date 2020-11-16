@@ -1,6 +1,8 @@
 # portainer_templates
 A list of templates used by the Coyotech Portainer server!
 
+At this time, development to this listing has stopped. Portainer CE 2.0 does not support the needed components to continue, docker-compose V3 support. Portainer CE 2.1 is mapped out to provide this compatibility, at which point this project will continue.
+
 ##TODO:
 1) Reminder: Be prepared to reformat portainer.json. When Portainer CE 2.1 comes out with support for Docker-compose v3, things will most certainly change.
 2) Docker-compose files are NOT complete.
